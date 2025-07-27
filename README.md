@@ -62,7 +62,7 @@ A behavior that binds an event on a `VisualElement` to an `ICommand`.
 
 To see how to use behaviors in a real .NET MAUI application, check out the demo implementation:
 
-- [MainPage.xaml (linia 36–46)](https://github.com/kmaraszkiewicz86/Kmaraszkiewicz86.Maui.Behaviors/blob/main/src/Kmaraszkiewicz86.Maui.Behaviors.Demo/MainPage.xaml#L36-L46): The main view that sets up the load command to the view page.
+- [MainPage.xaml (linia 36–46)](https://github.com/kmaraszkiewicz86/Kmaraszkiewicz86.Maui.Behaviors/blob/main/src/Kmaraszkiewicz86.Maui.Behaviors.Demo/MainPage.xaml#L7-L9): The main view that sets up the load command to the view page.
 - [MainViewModel.cs (linia 36–46)](https://github.com/kmaraszkiewicz86/Kmaraszkiewicz86.Maui.Behaviors/blob/main/src/Kmaraszkiewicz86.Maui.Behaviors.Demo/ViewModels/MainViewModel.cs#L36-L46): The view model that exposes properties and commands for the view, demonstrating how to attach logic using behaviors and data binding.
 
 These examples illustrate how to connect your UI to logic using behaviors and the MVVM pattern in .NET MAUI.
