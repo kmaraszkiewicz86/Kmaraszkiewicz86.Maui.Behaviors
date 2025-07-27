@@ -62,7 +62,7 @@ A behavior that binds an event on a `VisualElement` to an `ICommand`.
 
 To see how to use behaviors in a real .NET MAUI application, check out the demo implementation:
 
-- [MainPage]([Kmaraszkiewicz86.Maui.Behaviors.Demo/MainPage.xaml.cs#L113-L306](https://github.com/kmaraszkiewicz86/Kmaraszkiewicz86.Maui.Behaviors/blob/3afc250f22378fe4db1116db75dc99180e0b1a08/src/Kmaraszkiewicz86.Maui.Behaviors.Demo/MainPage.xaml?plain=1#L7C1-L9C29)): The main view that sets up the load command to the view page.
-- [MainViewModel]([Kmaraszkiewicz86.Maui.Behaviors.Demo/ViewModels/MainViewModel.cs#L621-L4467](https://github.com/kmaraszkiewicz86/Kmaraszkiewicz86.Maui.Behaviors/blob/3afc250f22378fe4db1116db75dc99180e0b1a08/src/Kmaraszkiewicz86.Maui.Behaviors.Demo/ViewModels/MainViewModel.cs?plain=1#L36C1-L46C10)): The view model that exposes properties and commands for the view, demonstrating how to attach logic using behaviors and data binding.
+- [MainPage.xaml (linia 36–46)](https://github.com/kmaraszkiewicz86/Kmaraszkiewicz86.Maui.Behaviors/blob/main/src/Kmaraszkiewicz86.Maui.Behaviors.Demo/MainPage.xaml#L36-L46): The main view that sets up the load command to the view page.
+- [MainViewModel.cs (linia 36–46)](https://github.com/kmaraszkiewicz86/Kmaraszkiewicz86.Maui.Behaviors/blob/main/src/Kmaraszkiewicz86.Maui.Behaviors.Demo/ViewModels/MainViewModel.cs#L36-L46): The view model that exposes properties and commands for the view, demonstrating how to attach logic using behaviors and data binding.
 
 These examples illustrate how to connect your UI to logic using behaviors and the MVVM pattern in .NET MAUI.
