@@ -12,7 +12,7 @@ A lightweight library providing reusable behavior classes for .NET MAUI. Easily 
 Install the NuGet package:
 
 ```
-dotnet add package Kmaraszkiewicz86.Maui.Behaviors --version 0.1.1
+dotnet add package Kmaraszkiewicz86.Maui.Behaviors --version 0.1.3
 ```
 
 ## License
