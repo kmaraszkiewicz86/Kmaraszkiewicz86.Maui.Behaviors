@@ -1,0 +1,1 @@
+Package intallation command: dotnet add package Kmaraszkiewicz86.Maui.Behaviors --version 0.1.1

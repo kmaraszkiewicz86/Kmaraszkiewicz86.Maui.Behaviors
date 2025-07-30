@@ -7,6 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kmaraszkiewicz86.Maui.Behav
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kmaraszkiewicz86.Maui.Behaviors", "Kmaraszkiewicz86.Maui.Behaviors\Kmaraszkiewicz86.Maui.Behaviors.csproj", "{DF001A2E-14DC-3640-70A3-CFD0EF00899D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nuget_Install", "Nuget_Install", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+	ProjectSection(SolutionItems) = preProject
+		NugetIPushCommand.txt = NugetIPushCommand.txt
+		NugetInstallationCommand.txt = NugetInstallationCommand.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

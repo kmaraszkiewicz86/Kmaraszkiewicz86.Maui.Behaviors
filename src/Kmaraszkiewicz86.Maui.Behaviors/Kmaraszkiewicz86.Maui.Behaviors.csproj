@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFrameworks>net8.0-android;net8.0-ios;net8.0-maccatalyst</TargetFrameworks>
@@ -21,6 +21,24 @@
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
+	</ItemGroup>
+
+	<PropertyGroup>
+		<PackageId>Kmaraszkiewicz86.Maui.Behaviors</PackageId>
+		<Version>0.1.3</Version>
+		<Authors>Krzysztof Maraszkiewicz</Authors>
+		<Description>
+			A lightweight library providing reusable behavior classes for .NET MAUI. Easily attach logic to UI controls, such as binding events (e.g. Appearing) to MVVM commands directly in XAML, enabling clean separation of view and logic.
+		</Description>
+		<PackageTags>maui;behaviors;mvvm</PackageTags>
+		<RepositoryUrl>https://github.com/kmaraszkiewicz86/Kmaraszkiewicz86.Maui.Behaviors</RepositoryUrl>
+		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="LICENSE.txt" Pack="true" PackagePath="" />
+		<None Include="README.md" Pack="true" PackagePath=""/>
 	</ItemGroup>
 
 </Project>
