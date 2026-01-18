@@ -98,3 +98,9 @@ and in Mvvm:
         }
 
 ```
+
+### Instalation via nuget package
+
+```
+dotnet add package Kmaraszkiewicz86.Maui.Behaviors --version 0.1.4
+```
