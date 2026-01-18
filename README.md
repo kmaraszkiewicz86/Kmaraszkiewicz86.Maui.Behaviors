@@ -66,3 +66,35 @@ To see how to use behaviors in a real .NET MAUI application, check out the demo 
 - [MainViewModel.cs](https://github.com/kmaraszkiewicz86/Kmaraszkiewicz86.Maui.Behaviors/blob/main/src/Kmaraszkiewicz86.Maui.Behaviors.Demo/ViewModels/MainViewModel.cs#L36-L46): The view model that exposes properties and commands for the view, demonstrating how to attach logic using behaviors and data binding.
 
 These examples illustrate how to connect your UI to logic using behaviors and the MVVM pattern in .NET MAUI.
+
+
+### How to use
+
+```
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:behaviors="clr-namespace:Kmaraszkiewicz86.Maui.Behaviors;assembly=Kmaraszkiewicz86.Maui.Behaviors"
+             x:Class="Kmaraszkiewicz86.Maui.Behaviors.Demo.MainPage">
+
+    <ContentPage.Behaviors>
+        <behaviors:EventToCommandBehavior EventName="Appearing" Command="{Binding LoadCommand}" />
+    </ContentPage.Behaviors>
+
+```
+
+and in Mvvm:
+
+```
+
+        public ICommand LoadCommand { get; }
+
+        public MainViewModel()
+        {
+            LoadCommand = new Command(() =>
+            {
+                Message = "Hello, World!";
+            });
+        }
+
+```
