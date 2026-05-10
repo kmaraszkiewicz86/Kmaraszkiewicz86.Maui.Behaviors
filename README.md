@@ -67,6 +67,8 @@ To see how to use behaviors in a real .NET MAUI application, check out the demo 
 
 These examples illustrate how to connect your UI to logic using behaviors and the MVVM pattern in .NET MAUI.
 
+---
+
 
 ### How to use
 
@@ -99,8 +101,19 @@ and in Mvvm:
 
 ```
 
-### Instalation via nuget package
+---
 
+## Installation
+Install the NuGet package:
+---
+* For .net10.0:
 ```
-dotnet add package Kmaraszkiewicz86.Maui.Behaviors --version 0.1.4
+dotnet add package Kmaraszkiewicz86.Maui.Behaviors --version 1.0.0
+```
+* For .net9.0:
+Currently, the package is not available for .net9.0.
+
+* For .net8.0:
+```
+dotnet add package Kmaraszkiewicz86.Maui.Behaviors --version 1.0.0
 ```

@@ -11,8 +11,18 @@ A lightweight library providing reusable behavior classes for .NET MAUI. Easily 
 ## Installation
 Install the NuGet package:
 
+* For .net10.0:
+
 ```
-dotnet add package Kmaraszkiewicz86.Maui.Behaviors --version 0.1.4
+dotnet add package Kmaraszkiewicz86.Maui.Behaviors --version 1.0.0
+```
+
+* For .net9.0:
+Currently, the package is not available for .net9.0.
+
+* For .net8.0:
+```
+dotnet add package Kmaraszkiewicz86.Maui.Behaviors --version 1.0.0
 ```
 
 ## License

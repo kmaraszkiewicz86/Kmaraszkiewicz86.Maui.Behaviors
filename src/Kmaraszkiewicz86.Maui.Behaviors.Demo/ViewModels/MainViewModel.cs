@@ -41,7 +41,7 @@ namespace Kmaraszkiewicz86.Maui.Behaviors.Demo.ViewModels
         {
             LoadCommand = new Command(() =>
             {
-                Message = "Hello, World!";
+                Message = "Application Loaded!";
             });
         }
 
