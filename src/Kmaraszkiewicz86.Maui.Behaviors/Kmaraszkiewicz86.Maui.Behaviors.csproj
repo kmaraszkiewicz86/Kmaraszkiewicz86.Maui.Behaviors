@@ -20,7 +20,7 @@
 
 	<PropertyGroup>
 		<PackageId>Kmaraszkiewicz86.Maui.Behaviors</PackageId>
-		<Version>1.0.1</Version>
+		<Version>1.0.2</Version>
 		<Authors>Krzysztof Maraszkiewicz</Authors>
 		<Description>
 			A lightweight library providing reusable behavior classes for .NET MAUI. Easily attach logic to UI controls, such as binding events (e.g. Appearing) to MVVM commands directly in XAML, enabling clean separation of view and logic.

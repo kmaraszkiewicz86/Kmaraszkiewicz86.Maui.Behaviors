@@ -115,5 +115,5 @@ Currently, the package is not available for .net9.0.
 
 * For .net8.0:
 ```
-dotnet add package Kmaraszkiewicz86.Maui.Behaviors --version 1.0.0
+dotnet add package Kmaraszkiewicz86.Maui.Behaviors --version 0.1.4
 ```
