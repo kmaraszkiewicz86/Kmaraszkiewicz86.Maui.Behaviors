@@ -108,7 +108,7 @@ Install the NuGet package:
 ---
 * For .net10.0:
 ```
-dotnet add package Kmaraszkiewicz86.Maui.Behaviors --version 1.0.0
+dotnet add package Kmaraszkiewicz86.Maui.Behaviors --version 1.0.3
 ```
 * For .net9.0:
 Currently, the package is not available for .net9.0.
