@@ -14,6 +14,9 @@
             Padding="30,0"
             Spacing="25">
 
+            <Label IsVisible="{Binding IsLoading}"
+                Text="Simulate async logic; the 'Application Loaded!' text will be visible after 2 seconds." />
+
             <Label
                 Text="{Binding Message}"
                 Style="{StaticResource Headline}"

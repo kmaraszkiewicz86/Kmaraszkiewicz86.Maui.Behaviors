@@ -9,6 +9,15 @@ namespace Kmaraszkiewicz86.Maui.Behaviors.Demo.ViewModels
     public class MainCommunityToolkitViewModel : ObservableObject
     {
         /// <summary>
+        /// Check if async logic is finised
+        /// </summary>
+        public bool IsLoading
+        {
+            get => field;
+            set => SetProperty(ref field, value);
+        } = true;
+
+        /// <summary>
         /// Simple message property that shows the behaviors logic will work.
         /// </summary>
         public string Message
@@ -28,8 +37,9 @@ namespace Kmaraszkiewicz86.Maui.Behaviors.Demo.ViewModels
         private async Task OnLoadAsync()
         {
             //to simulate some background work, we will just delay for a short time before updating the message
-            await Task.Delay(200);
+            await Task.Delay(2000);
             Message = "Application Loaded!";
+            IsLoading = false;
         }
     }
 }
