@@ -57,6 +57,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.2" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="10.0.7" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="10.0.60" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="10.0.60" />
@@ -64,6 +65,12 @@
 
 	<ItemGroup>
 	  <ProjectReference Include="..\Kmaraszkiewicz86.Maui.Behaviors\Kmaraszkiewicz86.Maui.Behaviors.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="MainPageCommunityToolkitMvvm.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>

@@ -15,17 +15,10 @@ namespace Kmaraszkiewicz86.Maui.Behaviors.Demo.ViewModels
         /// <summary>
         /// Simple message property that shows the behaviors logic will work.
         /// </summary>
-        /// <remarks>This field is initialized with the value "Loading..." and is intended to be used
-        /// internally  to indicate a loading state. It is not exposed publicly.</remarks>
-        private string _message = "Loading...";
-
-        /// <summary>
-        /// Simple message property that shows the behaviors logic will work.
-        /// </summary>
         public string Message
         {
-            get => _message;
-            set => SetProperty(ref _message, value);
+            get => field;
+            set => SetProperty(ref field, value);
         }
 
         /// <summary>
@@ -33,16 +26,18 @@ namespace Kmaraszkiewicz86.Maui.Behaviors.Demo.ViewModels
         /// </summary>
         /// <remarks>This command is typically used to trigger data loading or other initialization tasks.
         /// Ensure that the command is properly bound and executed within the appropriate context.</remarks>
-        public ICommand LoadCommand { get; }
+        public ICommand LoadCommand => new Command(async () => await OnLoadAsync());
 
         public event PropertyChangedEventHandler? PropertyChanged;
 
-        public MainViewModel()
+        /// <summary>
+        /// Present simple load command that simulates a loading operation by delaying for a short time before updating the message.
+        /// </summary>
+        private async Task OnLoadAsync()
         {
-            LoadCommand = new Command(() =>
-            {
-                Message = "Application Loaded!";
-            });
+            //to simulate some background work, we will just delay for a short time before updating the message
+            await Task.Delay(200);
+            Message = "Application Loaded!";
         }
 
         /// <summary>
